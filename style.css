@@ -24,23 +24,24 @@ main {
 }
 
 main .container {
-    margin-top: 120px;
+    margin-top: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    max-width: 500px;
     height: 100vh;
-    height: 100%;
+    max-height: 100%;
 }
 
 .header h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
 .itens #item {
     border: none;
     height: 30px;
+    width: 250px;
     padding: 5px;
     border-radius: 5px;
     font-family: 'Fuzzy Bubbles', cursive;
@@ -62,26 +63,70 @@ main .container {
     opacity: 1;
 }
 
-
-
 #lista {
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
+#lista p {
+    padding: 6px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lista input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    bottom: 3px;
+  }
+
+  input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    top: 0;
+    
+    left: 0;
+    background-color: #87a29f;
+  }
+
+  input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 3px;
+    left: 6px;
+  }
+
+  span{
+    margin: 0px 15px;
+  }
 
 #lista button {
     border: none;
     padding: 2px;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 25px;
     font-family: 'Fuzzy Bubbles', cursive;
     font-weight: bold;
+    font-size: 18px;
     color: #c9b2b2;
     cursor: pointer;
     transition: 0.3s;
@@ -91,4 +136,20 @@ main .container {
     color: #c36262;
 }
 
+@media (max-width: 700px ) {
 
+    .header h1 {
+        font-size: 30px;
+    }
+  
+    .itens #item {
+        width: 150px;
+    }
+
+    #lista p {
+        font-size: 15px;
+        padding: 6px;
+        width: 200px;
+
+    }
+}

@@ -6,7 +6,10 @@ function adicionar() {
     if((!itemDigitado)) {
         alert('Digite uma tarefa.')
     } else {
-        lista.innerHTML += `<p><input type="checkbox" name="check" class="check"> ${itemDigitado} <button onclick="remover()">X</button> </p>`
+        lista.innerHTML += `<p>
+        <input type="checkbox"> 
+        <span>${itemDigitado} </span>
+        <button onclick="remover()">X</button></p>`
     }
     item.value = ''
     item.focus()
