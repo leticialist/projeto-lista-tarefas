@@ -155,8 +155,9 @@ main .container {
 @media (max-width: 576px) {
 
     main {
-        height: 60vh;
+        background-position: top;
     }
+
     main .container {
         margin-top: 100px;
         
