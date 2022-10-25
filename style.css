@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Fuzzy Bubbles', cursive;
+    
+}
+
+main {
+    background: url(clipart.png) center center no-repeat;
+    background-size: contain;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .container {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    height: 100%;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.itens #item {
+    border: none;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.itens .btn {
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .8;
+    transition: 0.3s;
+}
+
+.itens .btn:hover {
+    opacity: 1;
+}
+
+
+
+#lista {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#lista button {
+    border: none;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+    color: #c9b2b2;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#lista button:hover {
+    color: #c36262;
+}
+
+
