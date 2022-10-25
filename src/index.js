@@ -9,8 +9,13 @@ function adicionar() {
         lista.innerHTML += `<p>
         <input type="checkbox"> 
         <span>${itemDigitado} </span>
-        <button onclick="remover()">X</button></p>`
+        <button onclick="removerElemento(this)">X</button></p>`
     }
     item.value = ''
     item.focus()
+}
+
+function removerElemento(el){
+    const elemento = el.target;
+    el.parentNode.remove();
 }
